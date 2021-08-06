@@ -6,6 +6,7 @@
     flex-direction: column;
     background-color: $white-four;
     align-items: center;
+    border-bottom: 1px solid gray;
   }
 
   &__logo {
@@ -15,11 +16,14 @@
   }
   &__title {
     font-size: 19.2px;
+    font-family: "Merriweather", serif;
     color: $dull-orange;
     text-align: center;
     margin: 17.2px auto 0px auto;
   }
   &__paragraf {
+    height: 39px;
+    width: 265px;
     text-align: center;
     font-size: 12.8px;
     color: $dark-green-blue;
@@ -31,6 +35,14 @@
     border-radius: 21px;
     border: none;
     padding: 10px 20px;
+    margin: 38px auto 30px auto;
+  }
+  &__wrapper--icons {
+    border-radius: 4px;
+    width: 268px;
+    height: 74px;
+    border: solid rgba(225, 115, 52, 0.2) 2px;
+    margin-top: 18px;
   }
 }
 .link1 {
