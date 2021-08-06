@@ -1,0 +1,109 @@
+.sectionDesigns {
+  font-family: "Open Sans", sans-serif;
+  color: #54585a;
+  display: flex;
+  .collapsible-title {
+    align-items: flex-end;
+
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 27px 20px 11px 10px;
+    width: 100vw;
+    .icon {
+      margin: 0 10px 0 20px;
+      width: 21px;
+      height: 18px;
+      position: relative;
+      top: 2px;
+    }
+    .arrow {
+      margin: 0 0 0 168px;
+      width: 20px;
+      height: 22px;
+      position: relative;
+      top: 3px;
+    }
+    .color {
+      display: flex;
+      justify-content: space-between;
+
+      font-weight: normal;
+      font-size: 14px;
+      margin: 11px 0 0 39px;
+    }
+    .palette {
+      display: grid;
+      grid-column: 1fr 1fr;
+      grid-gap: 20px;
+
+      .paletteA {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        .palette_1 {
+          grid-column: 1/2;
+          background-color: #114e4e;
+          height: 25px;
+          width: 30px;
+        }
+        .palette_2 {
+          grid-column: 2/3;
+          background-color: #438792;
+          height: 25px;
+          width: 30px;
+        }
+        .palette_3 {
+          grid-column: 3/4;
+          background-color: #a2deaf;
+          height: 25px;
+          width: 30px;
+        }
+      }
+      .paletteB {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        .palette_1 {
+          grid-column: 1/2;
+          background-color: #420101;
+          height: 25px;
+          width: 30px;
+        }
+        .palette_2 {
+          grid-column: 2/3;
+          background-color: #bd1010;
+          height: 25px;
+          width: 30px;
+        }
+        .palette_3 {
+          grid-column: 3/4;
+          background-color: #e95626;
+          height: 25px;
+          width: 30px;
+        }
+      }
+      .paletteC {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        .palette_1 {
+          grid-column: 1/2;
+          background-color: #3e5b65;
+          height: 25px;
+          width: 30px;
+        }
+        .palette_2 {
+          grid-column: 2/3;
+          background-color: #eab052;
+          height: 25px;
+          width: 30px;
+        }
+        .palette_3 {
+          grid-column: 3/4;
+          background-color: #a0c0cf;
+          height: 25px;
+          width: 30px;
+        }
+      }
+    }
+  }
+}
