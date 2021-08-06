@@ -1,0 +1,42 @@
+.landing {
+  &__hero {
+    height: 458px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: $white-four;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 250px;
+    height: 64px;
+    margin: 95px 35px 17.2px 35px;
+  }
+  &__title {
+    font-size: 19.2px;
+    color: $dull-orange;
+    text-align: center;
+    margin: 17.2px auto 0px auto;
+  }
+  &__paragraf {
+    text-align: center;
+    font-size: 12.8px;
+    color: $dark-green-blue;
+  }
+  &__button {
+    background-color: $dirty-blue;
+    height: 42px;
+    width: 129px;
+    border-radius: 21px;
+    border: none;
+    padding: 10px 20px;
+  }
+}
+.link1 {
+  text-decoration: none;
+  color: $white-two;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+}
