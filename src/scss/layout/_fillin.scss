@@ -1,0 +1,32 @@
+.boxt { display: flex;
+    flex-direction: row;
+&__title {color: $gunmetal;
+font-size: 18px;
+margin-left: 10px;
+text-transform: uppercase;}}
+
+.quest {display:grid;
+    grid-template-columns: repeat(1, 1fr);
+margin: 15px 15px 15px 15px;
+
+color: $dark-green-blue;
+&__label{ font-size: 14px;
+    margin: 10px 10px 10px 0px ;
+    grid-column: span 1;}
+&__input{grid-column: 1;
+padding: 5px;
+border: solid $hospital-green 1px;}
+
+&__button {width: 140px;
+    height: 30px;
+    margin: 10px 10px 10px 0px;
+background-color: #e17334;
+color: white;
+&--window{width: 30px;
+height: 30px;
+border: solid $hospital-green 1px;}}}
+
+.keyfill {margin-left: 15px;
+    margin-top: 3px;
+    font-size: 20px;
+color:$dull-orange;line-height:px;}
