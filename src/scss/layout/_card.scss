@@ -1,0 +1,22 @@
+.sample {
+    background-color: #bfcdd0;
+
+
+    &__card {
+        width: 240px;
+        height: 330px;
+
+        &--img {
+            width: 240px;
+            height: 200px;
+        }
+
+        &--contact {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            padding-left: 20px;
+        }
+    }
+}
