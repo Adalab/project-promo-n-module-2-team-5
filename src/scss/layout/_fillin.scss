@@ -20,7 +20,9 @@ border: solid $hospital-green 1px;}
 &__button {width: 140px;
     height: 30px;
     margin: 10px 10px 10px 0px;
-background-color: #e17334;
+background-color:$dull-orange;
+border: $dull-orange 1px;
+border-radius: 3px;
 color: white;
 &--window{width: 30px;
 height: 30px;
