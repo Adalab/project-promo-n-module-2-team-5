@@ -1,10 +1,36 @@
 .sample {
-    background-color: #bfcdd0;
+    background: linear-gradient(#bfcdd0, #dde9ed);
+    padding: 38px 35px 40px 45px;
 
+    &__reset {
+        width: 75px;
+        height: 30px;
+        background-color: inherit;
+        border: solid 1px $white-two;
+        border-radius: 15px;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: $gunmetal;
+        margin-bottom: 20px;
+    }
 
     &__card {
         width: 240px;
         height: 330px;
+        background-color: $white-two;
+
+        &--title {
+            padding-left: 20px;
+            padding-top: 20px;
+
+            &--name {
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 20px;
+                color: $dark-green-blue;
+            }
+
+        }
 
         &--img {
             width: 240px;
@@ -17,6 +43,15 @@
             flex-direction: row;
             gap: 10px;
             padding-left: 20px;
+
+            .item {
+                font-size: 18px;
+                color: $dark-green-blue;
+                padding: 7px;
+                border: solid 2px $hospital-green;
+                border-radius: 25px;
+            }
         }
     }
 }
+
