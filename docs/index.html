@@ -33,11 +33,38 @@
 
   <body>
     <main class="page">
-      <include src="./partials/landing.html"></include>
+      <main main__landing>
+        <section class="landing__hero">
+          <img
+            class="landing__logo"
+            src="./assets/images/tarjetas-molonas.png"
+            alt="tarjetas-molonas"
+          />
+          <h1 class="landing__title">Crea tu tarjeta de visita</h1>
+          <p class="landing__paragraf">
+            Crea mejores contactos profesionales de forma fácil y cómoda
+          </p>
+          <div class="landing__wrapper--icons">
+            <span class="text__icon"
+              ><i class="far fa-object-ungroup"></i> Diseña</span
+            >
+            <span class="text__icon"><i class="far fa-keyboard"></i>Rellena</span>
+            <span class="text__icon"><i class="fas fa-share-alt"></i>Comparte</span>
+          </div>
+          <button class="landing__button">
+            <a class="link1" href="./interactive.html">comenzar</a>
+          </button>
+        </section>
+      </main>
+
     </main>
 
     <footer>
-      <include src="./partials/footer.html"></include>
+      <footer class="footer__container">
+        <small class="footer__text"> &copy;Awesome profile-cards @2021 </small>
+        <img class="logo__adalab" src="./assets/images/logo-adalab.png" alt="" />
+      </footer>
+
     </footer>
 
     <script src="./assets/js/main.js"></script>

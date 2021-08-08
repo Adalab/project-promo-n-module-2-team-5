@@ -1,0 +1,19 @@
+.footer__container {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo__adalab {
+  margin-top: 12px;
+  height: 40px;
+  width: 103px;
+}
+.footer__text {
+  font-size: 14px;
+  color: $brownish-grey;
+  line-height: 20px;
+}
