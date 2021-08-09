@@ -9,3 +9,10 @@
 @import "layout/share";
 @import "layout/footer";
 @import "pages/index";
+
+main {
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

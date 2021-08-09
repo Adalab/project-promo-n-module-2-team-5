@@ -14,8 +14,6 @@
       top: 2px;
     }
     .a {
-      display: flex;
-      justify-content: initial;
       .arrow {
         height: 22px;
         position: relative;
@@ -28,14 +26,14 @@
       justify-content: space-between;
       font-weight: normal;
       font-size: 14px;
-      margin: 22px 0 0 39px;
+      margin: 22px -10px 0 39px;
     }
     .palette {
-      margin: 10px 0 30px 0px;
+      margin-top: 10px;
       .check {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
-        grid-template-column: 1fr 1fr;
+        border: none;
         .check_one {
           display: grid;
           grid-template-columns: 1fr 1fr;
@@ -110,7 +108,7 @@
   }
 
   .line1 {
-    margin-top: 30px;
+    margin: 15px 20px 0 20px;
     height: 1px;
     background-color: #d8d8d8;
   }

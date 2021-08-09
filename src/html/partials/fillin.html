@@ -1,58 +1,62 @@
-<section>
+<section class="section_fill">
   <div class="boxt">
     <i class="far fa-keyboard keyfill"></i>
     <h2 class="boxt__title">Rellena</h2>
+    <img class="arrow" src="./assets/images/arrowx2.png" alt="" />
   </div>
 
-  <form class="quest" action="/signup" method="post">
-  
-      <label class="quest__label" for="fullName">Nombre completo</label>
-      <input class="quest__input"
-        placeholder="Ej: Sali Jill"
-        id="fullName"
-        type="text"
-        name="fullName"
-      />
-      <label class="quest__label" for="role">Puesto</label>
-      <input class="quest__input"
-        placeholder="Ej: Front-end unicorn"
-        id="role"
-        type="text"
-        name="role"
-      />
-   
-      <button class="quest__button" >Añadir imagen</button>
-      <div class="quest__button--window"></div>
-    
+  <fieldset class="quest" action="/signup" method="post">
+    <label class="quest__label" for="fullName">Nombre completo</label>
+    <input
+      class="quest__input"
+      placeholder="Ej: Sali Jill"
+      id="fullName"
+      type="text"
+      name="fullName"
+    />
+    <label class="quest__label" for="role">Puesto</label>
+    <input
+      class="quest__input"
+      placeholder="Ej: Front-end unicorn"
+      id="role"
+      type="text"
+      name="role"
+    />
 
-      <label class="quest__label" for="e-mail">Email</label>
-      <input class="quest__input"
-        placeholder="Ej: sally-hill@gmail.com"
-        id="role"
-        type="text"
-        name="role"
-      />
-      <label class="quest__label" for="phone">Teléfono</label>
-      <input class="quest__input"
-        placeholder="Ej:555-55-55-55"
-        id="phone"
-        type="tel"
-        name="Telephone"
-      />
-      <label class="quest__label" for="Linkedin">Linkedin</label>
-      <input class="quest__input"
-        placeholder="Ej: linkedin.com/in/sally.hill"
-        id="linkedin"
-        type="url"
-        name="Linkedin-profile"
-      />
-      <label class="quest__label" for="github">Github</label>
-      <input class="quest__input"
-        placeholder="@sally-hill"
-        id="github"
-        type="text"
-        name="Github-profile"
-      />
-    
-  </form>
+    <button class="quest__button">Añadir imagen</button>
+    <div class="quest__button--window"></div>
+
+    <label class="quest__label" for="e-mail">Email</label>
+    <input
+      class="quest__input"
+      placeholder="Ej: sally-hill@gmail.com"
+      id="role"
+      type="text"
+      name="role"
+    />
+    <label class="quest__label" for="phone">Teléfono</label>
+    <input
+      class="quest__input"
+      placeholder="Ej:555-55-55-55"
+      id="phone"
+      type="tel"
+      name="Telephone"
+    />
+    <label class="quest__label" for="Linkedin">Linkedin</label>
+    <input
+      class="quest__input"
+      placeholder="Ej: linkedin.com/in/sally.hill"
+      id="linkedin"
+      type="url"
+      name="Linkedin-profile"
+    />
+    <label class="quest__label" for="github">Github</label>
+    <input
+      class="quest__input"
+      placeholder="@sally-hill"
+      id="github"
+      type="text"
+      name="Github-profile"
+    />
+  </fieldset>
 </section>

@@ -28,6 +28,7 @@
   .button {
     display: flex;
     justify-content: center;
+
     .button1 {
       display: flex;
       justify-content: space-evenly;
@@ -43,6 +44,10 @@
       font-weight: 600;
       font-size: 18px;
       border: 0;
+      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+      @media (min-width: 768px) {
+        margin-bottom: 10px; /*Quitar cuando usemos JS*/
+      }
     }
     .target {
       width: 25px;
@@ -50,8 +55,12 @@
     }
   }
   .line3 {
-    margin-top: 30px;
+    margin: 15px 20px 0 20px;
     height: 1px;
     background-color: #d8d8d8;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
   }
 }

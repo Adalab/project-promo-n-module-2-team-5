@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-top: solid 1px $border;
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;

@@ -1,89 +1,92 @@
 .sample {
-    background: linear-gradient(#bfcdd0, #dde9ed);
-    padding: 38px 35px 40px 45px;
-    
-    
+  background: linear-gradient(#bfcdd0, #dde9ed);
+  padding: 38px 35px 40px 45px;
+  order: 2;
+  @media (min-width: 768px) {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__reset {
+    width: 75px;
+    height: 30px;
+    background-color: inherit;
+    border: solid 1px $white-two;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: $gunmetal;
+    margin-bottom: 20px;
+    @media (min-width: 768px) {
+    }
+  }
 
-    &__reset {
-        width: 75px;
-        height: 30px;
-        background-color: inherit;
-        border: solid 1px $white-two;
-        border-radius: 15px;
-        text-transform: uppercase;
-        font-size: 12px;
-        color: $gunmetal;
-        margin-bottom: 20px;
+  &__card {
+    width: 240px;
+    // height: 330px;
+    background-color: $white-two;
+    border-radius: 2px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+    &--decor {
+      width: 5px;
+      height: 42px;
+      background-color: $dirty-blue;
+      position: absolute;
+      top: 220px;
     }
 
-    &__card {
-        width: 240px;
-        // height: 330px;
-        background-color: $white-two;
-        border-radius: 2px;
-        box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+    &--title {
+      &--name {
+        padding-top: 20px;
+        padding-left: 20px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 20px;
+        color: $dark-green-blue;
+        margin-bottom: 4px;
+      }
 
-        &--decor {
-            width: 5px;
-            height: 42px;
-            background-color:$dirty-blue;
-            position: absolute;
-            top: 220px;
-        }
-        
-        &--title {
-            
-            &--name {
-                padding-top: 20px;
-                padding-left: 20px;
-                font-size: 18px;
-                font-weight: 600;
-                line-height: 20px;
-                color: $dark-green-blue;
-                margin-bottom: 4px;
-            }
-
-            &--job {
-                padding-left: 20px;
-                padding-bottom: 10px;
-                font-size: 16px;
-                line-height: 20px;
-            }
-
-        }
-
-        &--img {
-            width: 240px;
-            height: 200px;
-        }
-
-        &--contact {
-            list-style: none;
-            display: flex;
-            flex-direction: row;
-            gap: 10px;
-            padding: 5px 20px 12px;
-
-            .item {
-                font-size: 18px;
-                color: $dark-green-blue;
-                border: solid 2px $hospital-green;
-                border-radius: 25px;
-                
-            }
-
-            .item1 {
-                padding: 4px 10px;
-            }
-
-            .item2 {
-                padding: 4px 7px;
-            }
-
-            .item3, .item4 {
-                padding: 4px 7px;
-            }
-        }
+      &--job {
+        padding-left: 20px;
+        padding-bottom: 10px;
+        font-size: 16px;
+        line-height: 20px;
+      }
     }
+
+    &--img {
+      width: 240px;
+      height: 200px;
+    }
+
+    &--contact {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      padding: 5px 20px 12px;
+
+      .item {
+        font-size: 18px;
+        color: $dark-green-blue;
+        border: solid 2px $hospital-green;
+        border-radius: 25px;
+      }
+
+      .item1 {
+        padding: 4px 10px;
+      }
+
+      .item2 {
+        padding: 4px 7px;
+      }
+
+      .item3,
+      .item4 {
+        padding: 4px 7px;
+      }
+    }
+  }
 }
-

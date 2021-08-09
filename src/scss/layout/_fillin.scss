@@ -1,36 +1,66 @@
-.boxt { display: flex;
+.section_fill {
+  margin: 27px 20px 11px 10px;
+
+  .boxt {
+    display: flex;
     flex-direction: row;
-&__title {color: $gunmetal;
-font-size: 18px;
-margin-left: 10px;
-text-transform: uppercase;}}
+    &__title {
+      color: $gunmetal;
+      font-size: 18px;
+      margin-left: 10px;
+      text-transform: uppercase;
+    }
 
-.quest {display:grid;
+    .arrow {
+      height: 22px;
+      position: relative;
+      top: 3px;
+      margin-left: auto;
+    }
+  }
+
+  .quest {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-margin: 15px 15px 15px 15px;
+    margin: 15px 15px 15px 15px;
+    border: none;
 
-color: $dark-green-blue;
-&__label{ font-size: 14px;
-    margin: 10px 10px 10px 0px ;
-    grid-column: span 2;}
-&__input{grid-column: span 2;
-padding: 5px;
-border: solid $hospital-green 1px;}
+    color: $dark-green-blue;
+    &__label {
+      font-size: 14px;
+      margin: 10px 10px 10px 0px;
+      grid-column: span 2;
+    }
+    &__input {
+      grid-column: span 2;
+      padding: 5px;
+      border: solid $hospital-green 1px;
+    }
 
-&__button {width: 140px;
-    height: 30px;
-    margin: 20px 0px 10px 0px;
-    font-size: 14px;
-background-color:$dull-orange;
-border: $dull-orange 1px;
-border-radius: 3px;
-color: white;
-&--window{width: 30px;
-height: 30px;
-margin: 20px 0px 10px 0px;
-border: solid $hospital-green 1px;}}}
+    &__button {
+      width: 140px;
+      height: 30px;
+      margin: 20px 0px 10px 0px;
+      font-size: 14px;
+      background-color: $dull-orange;
+      border: $dull-orange 1px;
+      border-radius: 3px;
+      color: white;
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+      &--window {
+        width: 30px;
+        height: 30px;
+        margin: 20px 0px 10px 0px;
+        border: solid $hospital-green 1px;
+      }
+    }
+  }
 
-.keyfill {margin-left: 15px;
+  .keyfill {
+    margin-left: 15px;
     margin-top: 3px;
     font-size: 20px;
-color:$dull-orange;line-height:px;}
+    color: $dull-orange;
+    line-height: px;
+  }
+}
