@@ -8,6 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 6px;
   }
   &__reset {
     width: 75px;
@@ -20,21 +21,28 @@
     color: $gunmetal;
     margin-bottom: 20px;
     @media (min-width: 768px) {
+      
+      // margin-right: auto;
     }
   }
 
   &__card {
     width: 240px;
-    // height: 330px;
+    height: 330px;
     background-color: $white-two;
     border-radius: 2px;
     box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+    
     &--decor {
       width: 5px;
       height: 42px;
       background-color: $dirty-blue;
       position: absolute;
       top: 220px;
+
+      @media (min-width: 768px) {
+        top:456px;
+      }
     }
 
     &--title {
