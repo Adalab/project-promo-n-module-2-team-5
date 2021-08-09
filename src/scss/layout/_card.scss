@@ -41,7 +41,7 @@
       top: 220px;
 
       @media (min-width: 768px) {
-        top:456px;
+        top:462px;
       }
     }
 
@@ -73,28 +73,29 @@
       list-style: none;
       display: flex;
       flex-direction: row;
-      gap: 10px;
+      // gap: 10px;
       padding: 5px 20px 12px;
 
       .item {
+        // width: 32px;
+        // height: 32px;
         font-size: 18px;
         color: $dark-green-blue;
         border: solid 2px $hospital-green;
-        border-radius: 25px;
+        border-radius: 16px;
+        margin-right: 10px;
       }
 
       .item1 {
-        padding: 4px 10px;
+        padding: 3px 10px;
       }
 
-      .item2 {
-        padding: 4px 7px;
-      }
-
-      .item3,
+      .item2, .item3,
       .item4 {
-        padding: 4px 7px;
+        padding: 3px 7px;
       }
+
+       
     }
   }
 }
