@@ -21,7 +21,7 @@
     color: $gunmetal;
     margin-bottom: 20px;
     @media (min-width: 768px) {
-      
+      transform: translateX(-84px);
       // margin-right: auto;
     }
   }
@@ -32,7 +32,7 @@
     background-color: $white-two;
     border-radius: 2px;
     box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
-    
+
     &--decor {
       width: 5px;
       height: 42px;
@@ -41,7 +41,7 @@
       top: 220px;
 
       @media (min-width: 768px) {
-        top:462px;
+        top: 462px;
       }
     }
 
@@ -90,12 +90,11 @@
         padding: 3px 10px;
       }
 
-      .item2, .item3,
+      .item2,
+      .item3,
       .item4 {
         padding: 3px 7px;
       }
-
-       
     }
   }
 }
