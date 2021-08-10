@@ -22,7 +22,6 @@
   .quest {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 15px 15px 15px 15px;
     border: none;
     color: $dark-green-blue;
     &__label {
@@ -65,8 +64,7 @@
   .keyfill {
     margin-left: 15px;
     margin-top: 3px;
-    font-size: 20px;
+    font-size: 18px;
     color: $dull-orange;
-    line-height: px;
   }
 }
