@@ -21,6 +21,12 @@
     color: $gunmetal;
     margin-bottom: 20px;
     @media (min-width: 768px) {
+      transform: translateX(-84px);
+      // margin-right: auto;
+    }
+  }
+
+  &__card {
     width: 240px;
     height: 330px;
     background-color: $white-two;
