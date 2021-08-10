@@ -6,6 +6,7 @@
     flex-direction: column;
     background-color: $white-four;
     align-items: center;
+    grid-column: span 3;
 
     @media (min-width: 768px) {
       height: 963px;
