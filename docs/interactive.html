@@ -1,221 +1,215 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <title>Page Interactive</title>
-  </head>
 
-  <body>
-    <header>
-      <header id="header" class="header">
-          <nav class="header__menu">
-              <a href="http://beta.adalab.es/project-promo-n-module-2-team-5/" title="Menu"><img class="header__menu--img"
-                      src="./assets/images/tarjetas-molonas.png" alt="Menu"></a>
-          </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <title>Page Interactive</title>
+</head>
 
-      </header>
+<body>
+  <header>
+    <header id="header" class="header">
+        <nav class="header__menu">
+            <a href="http://beta.adalab.es/project-promo-n-module-2-team-5/" title="Menu"><img class="header__menu--img"
+                    src="./assets/images/tarjetas-molonas.png" alt="Menu"></a>
+        </nav>
+
     </header>
+  </header>
 
-    <main>
-      <section class="sample">
-          <button class="sample__reset">
-              <i class="far fa-trash-alt"></i>
-              Reset
-          </button>
+  <main class="page">
+    <section class="sample">
+        <button class="sample__reset">
+            <i class="far fa-trash-alt"></i>
+            Reset
+        </button>
 
-          <article class="sample__card">
-              <div class="sample__card--decor"></div>
-              <hgroup class="sample___card--title">
-                  <h2 class="sample__card--title--name">Nombre Apellido</h2>
-                  <h3 class="sample__card--title--job">Front-end developer</h3>
-              </hgroup>
-              <img class="sample__card--img" src="./assets/images/picrandom.jpg" alt="Imagen elegida por el usuario">
-              <ul class="sample__card--contact">
-                  <a href="tel:" target="_blank" title="Llamar">
-                      <li class="item item1"><i class="fas fa-mobile-alt"></i></li>
-                  </a>
-                  <a href="mailto:" target="_blank">
-                      <li class="item item2"><i class="far fa-envelope"></i></li>
-                  </a>
-                  <a href="">
-                      <li class="item item3"><i class="fab fa-linkedin-in"></i></li>
-                  </a>
-                  <a href="">
-                      <li class="item item4"><i class="fab fa-github-alt"></i></li>
-                  </a>
-              </ul>
+        <article class="sample__card">
+            <div class="sample__card--decor"></div>
+            <hgroup class="sample___card--title">
+                <h2 class="sample__card--title--name">Nombre Apellido</h2>
+                <h3 class="sample__card--title--job">Front-end developer</h3>
+            </hgroup>
+            <img class="sample__card--img" src="./assets/images/picrandom.jpg" alt="Imagen elegida por el usuario">
+            <ul class="sample__card--contact">
+                <a href="tel:" target="_blank" title="Llamar">
+                    <li class="item item1"><i class="fas fa-mobile-alt"></i></li>
+                </a>
+                <a href="mailto:" target="_blank">
+                    <li class="item item2"><i class="far fa-envelope"></i></li>
+                </a>
+                <a href="">
+                    <li class="item item3"><i class="fab fa-linkedin-in"></i></li>
+                </a>
+                <a href="">
+                    <li class="item item4"><i class="fab fa-github-alt"></i></li>
+                </a>
+            </ul>
 
-          </article>
-      </section>
-      <form>
-        <section class="sectionDesigns">
-          <article class="collapsible-title">
-            <div class="a">
-              <p><i class="far fa-object-ungroup"></i>Diseña</p>
-              <img class="arrow" src="./assets/images/arrowx2.png" alt="" />
-            </div>
-            <div class="color">
-              <p class="text">color</p>
-              <div class="palette">
-                <fieldset class="check" action="/signup">
-                  <label class="check_one" for="paymentmethod1">
-                    <input
-                      class="one"
-                      id="paymentmethod1"
-                      type="radio"
-                      value="debitcard"
-                      name="paymentmethods"
-                    />
-                    <div class="paletteA">
-                      <div class="palette_1"></div>
-                      <div class="palette_2"></div>
-                      <div class="palette_3"></div>
-                    </div>
-                  </label>
-                  <label class="check_one" for="paymentmethod2">
-                    <input
-                      class="one"
-                      id="paymentmethod2"
-                      type="radio"
-                      value="creditcard"
-                      name="paymentmethods"
-                    />
-                    <div class="paletteB">
-                      <div class="palette_1"></div>
-                      <div class="palette_2"></div>
-                      <div class="palette_3"></div>
-                    </div>
-                  </label>
-                  <label class="check_one" for="paymentmethod3">
-                    <input
-                      class="one"
-                      id="paymentmethod3"
-                      type="radio"
-                      value="paypal"
-                      name="paymentmethods"
-                    />
-                    <div class="paletteC">
-                      <div class="palette_1"></div>
-                      <div class="palette_2"></div>
-                      <div class="palette_3"></div>
-                    </div>
-                  </label>
-                </fieldset>
-              </div>
-            </div>
-          </article>
-          <div class="line1"></div>
-        </section>
-
-        <section class="section_fill">
-          <div class="boxt">
-            <i class="far fa-keyboard keyfill"></i>
-            <h2 class="boxt__title">Rellena</h2>
+        </article>
+    </section>
+    <form>
+      <section class="sectionDesigns">
+        <article class="collapsible-title">
+          <div class="a">
+            <p><i class="far fa-object-ungroup"></i>Diseña</p>
             <img class="arrow" src="./assets/images/arrowx2.png" alt="" />
           </div>
+          <div class="color">
+            <p class="text">color</p>
+            <div class="palette">
+              <fieldset class="check" action="/signup">
+                <label class="check_one" for="paymentmethod1">
+                  <input
+                    class="one"
+                    id="paymentmethod1"
+                    type="radio"
+                    value="debitcard"
+                    name="paymentmethods"
+                  />
+                  <div class="paletteA">
+                    <div class="palette_1"></div>
+                    <div class="palette_2"></div>
+                    <div class="palette_3"></div>
+                  </div>
+                </label>
+                <label class="check_one" for="paymentmethod2">
+                  <input
+                    class="one"
+                    id="paymentmethod2"
+                    type="radio"
+                    value="creditcard"
+                    name="paymentmethods"
+                  />
+                  <div class="paletteB">
+                    <div class="palette_1"></div>
+                    <div class="palette_2"></div>
+                    <div class="palette_3"></div>
+                  </div>
+                </label>
+                <label class="check_one" for="paymentmethod3">
+                  <input
+                    class="one"
+                    id="paymentmethod3"
+                    type="radio"
+                    value="paypal"
+                    name="paymentmethods"
+                  />
+                  <div class="paletteC">
+                    <div class="palette_1"></div>
+                    <div class="palette_2"></div>
+                    <div class="palette_3"></div>
+                  </div>
+                </label>
+              </fieldset>
+            </div>
+          </div>
+        </article>
+        <div class="line1"></div>
+      </section>
 
-          <fieldset class="quest" action="/signup" method="post">
-            <label class="quest__label" for="fullName">Nombre completo</label>
-            <input
-              class="quest__input"
-              placeholder="Ej: Sali Jill"
-              id="fullName"
-              type="text"
-              name="fullName"
-            />
-            <label class="quest__label" for="role">Puesto</label>
-            <input
-              class="quest__input"
-              placeholder="Ej: Front-end unicorn"
-              id="role"
-              type="text"
-              name="role"
-            />
+      <section class="section_fill">
+        <div class="boxt">
+          <i class="far fa-keyboard keyfill"></i>
+          <h2 class="boxt__title">Rellena</h2>
+          <img class="arrow" src="./assets/images/arrowx2.png" alt="" />
+        </div>
 
+        <fieldset class="quest" action="/signup" method="post">
+          <label class="quest__label" for="fullName">Nombre completo</label>
+          <input
+            class="quest__input"
+            placeholder="Ej: Sali Jill"
+            id="fullName"
+            type="text"
+            name="fullName"
+          />
+          <label class="quest__label" for="role">Puesto</label>
+          <input
+            class="quest__input"
+            placeholder="Ej: Front-end unicorn"
+            id="role"
+            type="text"
+            name="role"
+          />
+
+          <fieldset class= quest__secondfield>
             <button class="quest__button">Añadir imagen</button>
             <div class="quest__button--window"></div>
-
-            <label class="quest__label" for="e-mail">Email</label>
-            <input
-              class="quest__input"
-              placeholder="Ej: sally-hill@gmail.com"
-              id="role"
-              type="text"
-              name="role"
-            />
-            <label class="quest__label" for="phone">Teléfono</label>
-            <input
-              class="quest__input"
-              placeholder="Ej:555-55-55-55"
-              id="phone"
-              type="tel"
-              name="Telephone"
-            />
-            <label class="quest__label" for="Linkedin">Linkedin</label>
-            <input
-              class="quest__input"
-              placeholder="Ej: linkedin.com/in/sally.hill"
-              id="linkedin"
-              type="url"
-              name="Linkedin-profile"
-            />
-            <label class="quest__label" for="github">Github</label>
-            <input
-              class="quest__input"
-              placeholder="@sally-hill"
-              id="github"
-              type="text"
-              name="Github-profile"
-            />
           </fieldset>
-        </section>
 
-        <section class="sectionDesigns">
-          <article class="collapsible-title">
-            <div class="a">
-              <p><i class="fas fa-share-alt"></i>Comparte</p>
-              <img class="arrow3" src="./assets/images/arrowx2.png" alt="" />
-            </div>
-          </article>
-          <article class="button">
-            <button class="button1">
-              <img class="target" src="./assets/images/target.png" alt="" />
-              <p>Crear tarjeta</p>
-            </button>
-          </article>
-          <div class="line3"></div>
-        </section>
+          <label class="quest__label" for="e-mail">Email</label>
+          <input
+            class="quest__input"
+            placeholder="Ej: sally-hill@gmail.com"
+            id="role"
+            type="text"
+            name="role"
+          />
+          <label class="quest__label" for="phone">Teléfono</label>
+          <input
+            class="quest__input"
+            placeholder="Ej:555-55-55-55"
+            id="phone"
+            type="tel"
+            name="Telephone"
+          />
+          <label class="quest__label" for="Linkedin">Linkedin</label>
+          <input
+            class="quest__input"
+            placeholder="Ej: linkedin.com/in/sally.hill"
+            id="linkedin"
+            type="url"
+            name="Linkedin-profile"
+          />
+          <label class="quest__label" for="github">Github</label>
+          <input
+            class="quest__input"
+            placeholder="@sally-hill"
+            id="github"
+            type="text"
+            name="Github-profile"
+          />
+        </fieldset>
+      </section>
 
-      </form>
-    </main>
+      <section class="sectionDesigns">
+        <article class="collapsible-title">
+          <div class="a">
+            <p><i class="fas fa-share-alt"></i>Comparte</p>
+            <img class="arrow3" src="./assets/images/arrowx2.png" alt="" />
+          </div>
+        </article>
+        <article class="button">
+          <button class="button1">
+            <img class="target" src="./assets/images/target.png" alt="" />
+            <p>Crear tarjeta</p>
+          </button>
+        </article>
+        <div class="line3"></div>
+      </section>
 
-    <footer>
-      <footer class="footer__container">
-        <small class="footer__text"> &copy;Awesome profile-cards @2021 </small>
-        <img class="logo__adalab" src="./assets/images/logo-adalab.png" alt="" />
-      </footer>
+    </form>
+  </main>
 
+  <footer>
+    <footer class="footer__container">
+      <small class="footer__text"> &copy;Awesome profile-cards @2021 </small>
+      <img class="logo__adalab" src="./assets/images/logo-adalab.png" alt="" />
     </footer>
 
-    <script src="./assets/js/main.js"></script>
-  </body>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+
 </html>
