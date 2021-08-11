@@ -7,14 +7,14 @@
     &__title {
       color: $gunmetal;
       font-size: 18px;
-      margin-left: 10px;
       text-transform: uppercase;
     }
 
     .arrow {
       height: 22px;
       position: relative;
-      top: 3px;
+      bottom: 8px;
+      padding: 10px;
       margin-left: auto;
     }
   }
@@ -24,6 +24,7 @@
     grid-template-columns: repeat(2, 1fr);
     border: none;
     color: $dark-green-blue;
+    padding: 0;
     &__label {
       font-size: 14px;
       margin: 10px 0px 10px 0px;
@@ -63,11 +64,16 @@
   }
 
   .keyfill {
-    margin-left: 15px;
+    margin: 0 10px 0 0;
     margin-top: 3px;
     font-size: 18px;
     color: $dull-orange;
     height: 18px;
     width: 21px;
+  }
+  .line1 {
+    margin: 15px 20px 0 0;
+    height: 1px;
+    background-color: #d8d8d8;
   }
 }
