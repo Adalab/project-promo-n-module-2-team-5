@@ -39,10 +39,6 @@
       background-color: $dirty-blue;
       position: absolute;
       top: 220px;
-
-      @media (min-width: 768px) {
-        top: 465px;
-      }
     }
 
     &--title {
