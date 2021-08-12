@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, we´re Team 5</h1>
-<h3 align="center">project module 2</h3>
+<h3 align="center">Project module 2: Awesome profile-cards</h3>
 
 - 🌱 we're currently learning **HTML, CSS and JS**
 
