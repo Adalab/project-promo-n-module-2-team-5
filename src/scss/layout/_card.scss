@@ -2,6 +2,7 @@
   background: linear-gradient(#bfcdd0, #dde9ed);
   padding: 38px 35px 40px 45px;
   order: 2;
+
   @media (min-width: 768px) {
     margin-bottom: 20px;
     display: flex;
@@ -10,6 +11,7 @@
     align-items: center;
     border-radius: 6px;
   }
+
   &__reset {
     width: 75px;
     height: 30px;
@@ -20,24 +22,22 @@
     font-size: 12px;
     color: $gunmetal;
     margin-bottom: 20px;
+
     @media (min-width: 768px) {
       transform: translateX(-84px);
-      // margin-right: auto;
     }
   }
 
   &__card {
     width: 240px;
-    height: 330px;
+    // height: 330px;
     background-color: $white-two;
     border-radius: 2px;
     box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
-
-    
+    padding-top: 20px;
 
     &--title {
-        &--name {
-        margin-top: 20px;
+      &--name {
         padding-left: 15px;
         padding-bottom: 4px;
         font-size: 18px;
@@ -45,7 +45,7 @@
         line-height: 20px;
         color: $dark-green-blue;
         border-left: $dirty-blue solid 5px;
-        
+
       }
 
       &--job {
