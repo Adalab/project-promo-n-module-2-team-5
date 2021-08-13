@@ -1,1 +1,0 @@
-"use strict";const titleToclickList=document.querySelectorAll(".collapsible-title");function closeSection(t){const e=t.currentTarget.querySelector(".js-collapse"),c=t.currentTarget.querySelector(".js-arrow");e.classList.toggle("hidden"),c.classList.toggle("rotate")}for(const t of titleToclickList)t.addEventListener("click",closeSection);
