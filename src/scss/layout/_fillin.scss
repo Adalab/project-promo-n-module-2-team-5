@@ -1,5 +1,8 @@
 .section_fill {
-  margin: 27px 20px 11px 0;
+  margin: 27px 0px 11px 0;
+  @media (min-width: 768px) {
+    margin-right:40px;
+  }}
 
   .boxt {
     display: flex;
@@ -27,7 +30,7 @@
     padding: 0;
     &__label {
       font-size: 14px;
-      margin: 10px 0px 10px 0px;
+      margin: 10px 19px 10px 20px;
       grid-column: span 2;
     }
     &__input {
@@ -76,4 +79,4 @@
     height: 1px;
     background-color: #d8d8d8;
   }
-}
+
