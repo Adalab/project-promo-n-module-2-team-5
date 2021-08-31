@@ -59,4 +59,36 @@
     height: 1px;
     background-color: #d8d8d8;
   }
+  .share {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .title {
+      margin-bottom: 5px;
+    }
+    .url {
+      color: #e17334;
+    }
+    .twitter {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: #00a0f5;
+      margin-top: 13px;
+      height: 50px;
+      width: 200px;
+      border-radius: 3px;
+      text-transform: uppercase;
+      color: #fff;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      border: 0;
+      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+      @media (min-width: 768px) {
+        margin-bottom: 10px; /*Quitar cuando usemos JS*/
+      }
+    }
+  }
 }
