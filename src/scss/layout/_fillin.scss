@@ -9,16 +9,16 @@
     font-size: 18px;
     text-transform: uppercase;
   }
-
-  .arrow {
-    height: 22px;
-    position: relative;
-    bottom: 8px;
-    padding: 10px;
+  .aArrow {
     margin-left: auto;
+    .arrow {
+      height: 22px;
+      position: relative;
+      bottom: 8px;
+      padding: 10px;
+    }
   }
 }
-
 .quest {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
