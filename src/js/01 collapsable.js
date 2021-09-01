@@ -7,9 +7,9 @@
   //const rotateaArrow = event.currentTarget.querySelector('.js-arrow');
   //collapseDivHTML.classList.toggle('hidden');
   //rotateaArrow.classList.toggle('rotate');
-}
+//}
 
 
 //for (const titleToclick of titleToclickList) {
   //titleToclick.addEventListener('click', closeSection);
-}
+//}
