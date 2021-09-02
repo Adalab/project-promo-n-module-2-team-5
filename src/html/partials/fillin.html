@@ -1,41 +1,56 @@
 <section class="section_fill">
   <article class="collapsible-title">
-    <div class="boxt a">
+    <div class="boxt a js-headerClick">
       <i class="far fa-keyboard keyfill"></i>
       <h2 class="boxt__title">Rellena</h2>
-      <a class="aArrow" js-arrow
+      <a class="aArrow js-arrow"
         ><img class="arrow" src="./assets/images/arrowx2.png" alt=""
       /></a>
     </div>
     <div class="js-collapse hidden">
       <fieldset class="quest hidden" action="/signup" method="post">
-        <label class="quest__label" for="fullName">Nombre completo</label>
+        <label class="quest__label" for="name">Nombre completo</label>
         <input
           class="quest__input"
           placeholder="Ej: Sali Jill"
-          id="fullName"
+          id="name"
           type="text"
-          name="fullName"
+          name="name"
         />
         <label class="quest__label" for="role">Puesto</label>
         <input
           class="quest__input"
           placeholder="Ej: Front-end unicorn"
-          id="role"
+          id="job"
           type="text"
           name="role"
         />
 
         <fieldset class="quest__secondfield">
-          <button class="quest__button">Añadir imagen</button>
-          <div class="quest__button--window"></div>
+          <label for="photo" class="quest__button js__profile-trigger"
+            >Añadir imagen</label
+          >
+
+          <div class="action">
+            <input
+              type="file"
+              name="photo"
+              id="photo"
+              class="action__hiddenField js__profile-upload-btn"
+            />
+          </div>
+          <!--<div class="profile">
+            <div class="profile__preview"></div>
+          </div>
+        -->
+          <div class="quest__button--window js__profile-preview"></div>
         </fieldset>
 
         <label class="quest__label" for="e-mail">Email</label>
         <input
           class="quest__input"
           placeholder="Ej: sally-hill@gmail.com"
-          id="role"
+          id="email"
           type="text"
           name="role"
         />

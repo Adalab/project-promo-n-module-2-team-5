@@ -51,13 +51,13 @@
         font-size: 16px;
         line-height: 20px;
         border-left: $dirty-blue solid 5px;
-
       }
     }
 
     &--img {
       width: 240px;
       height: 200px;
+      background-size: cover;
     }
 
     &--contact {
