@@ -27,7 +27,7 @@
   padding: 0;
   &__label {
     font-size: 14px;
-    margin: 10px 19px 10px 20px;
+    margin: 10px 19px 10px 0;
     grid-column: span 2;
   }
   &__input {
@@ -53,12 +53,14 @@
     color: white;
     padding: 5px 10px 0 10px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    min-width: max-content;
     &--window {
       width: 30px;
       height: 30px;
       margin: 20px 0px 10px 30px;
       border: solid $hospital-green 1px;
       background-size: cover;
+      min-width: 30px;
     }
   }
 }
