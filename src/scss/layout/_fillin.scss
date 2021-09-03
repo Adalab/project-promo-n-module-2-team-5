@@ -1,28 +1,24 @@
 .section_fill {
-  margin: 27px 0px 11px 0;
-  @media (min-width: 768px) {
-    margin-right: 20px;
-  }
+  margin: 27px 20px 11px 0;
 }
 
 .boxt {
   display: flex;
-  flex-direction: row;
   &__title {
     color: $gunmetal;
     font-size: 18px;
     text-transform: uppercase;
   }
-
-  .arrow {
-    height: 22px;
-    position: relative;
-    bottom: 8px;
-    padding: 10px;
+  .aArrow {
     margin-left: auto;
+    .arrow {
+      height: 22px;
+      position: relative;
+      bottom: 8px;
+      padding: 10px;
+    }
   }
 }
-
 .quest {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -31,7 +27,7 @@
   padding: 0;
   &__label {
     font-size: 14px;
-    margin: 10px 19px 10px 20px;
+    margin: 10px 19px 10px 0;
     grid-column: span 2;
   }
   &__input {
@@ -49,20 +45,22 @@
   }
 
   &__button {
-    width: 140px;
-    height: 30px;
     margin: 20px 0px 10px 0px;
     font-size: 14px;
     background-color: $dull-orange;
     border: $dull-orange 1px;
     border-radius: 3px;
     color: white;
+    padding: 5px 10px 0 10px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    min-width: max-content;
     &--window {
       width: 30px;
       height: 30px;
       margin: 20px 0px 10px 30px;
       border: solid $hospital-green 1px;
+      background-size: cover;
+      min-width: 30px;
     }
   }
 }
@@ -79,4 +77,8 @@
   margin: 15px 0 0 0;
   height: 1px;
   background-color: #d8d8d8;
+}
+
+.action__hiddenField {
+  display: none;
 }
