@@ -63,29 +63,72 @@
     &--contact {
       list-style: none;
       display: flex;
-      flex-direction: row;
       // gap: 10px;
-      padding: 5px 20px 12px;
-
-      .item {
-        // width: 32px;
-        // height: 32px;
+      padding: 10px 0 12px 20px;
+      .itemLink {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-size: 18px;
         color: $dark-green-blue;
-        border: solid 2px $hospital-green;
-        border-radius: 16px;
+        height: 32px;
         margin-right: 10px;
-      }
+        width: 32px;
+        border: solid #a2deaf 2px;
+        border-radius: 18px;
 
-      .item1 {
-        padding: 3px 10px;
-      }
+        .item {
+          // width: 32px;
+          // height: 32px;
+          font-size: 18px;
+        }
 
-      .item2,
-      .item3,
-      .item4 {
-        padding: 3px 7px;
+        .item1 {
+          padding: 3px 10px;
+        }
+
+        .item2,
+        .item3,
+        .item4 {
+          padding: 3px 7px;
+        }
+        .fas {
+        }
       }
     }
   }
+}
+
+.js-paletteOneTitle {
+  color: $color-one-palette-one;
+  border-left: $color-two-palette-one solid 5px;
+}
+.js-paletteTwoTitle {
+  color: $color-one-palette-two;
+  border-left: $color-two-palette-two solid 5px;
+}
+.js-paletteThreeTitle {
+  color: $color-one-palette-three;
+  border-left: $color-two-palette-three solid 5px;
+}
+.js-paletteOneSubtitle {
+  border-left: $color-two-palette-one solid 5px;
+}
+.js-paletteTwoSubtitle {
+  border-left: $color-two-palette-two solid 5px;
+}
+.js-paletteThreeSubtitle {
+  border-left: $color-two-palette-three solid 5px;
+}
+.sample__card--contact .js-paletteOneIcon {
+  color: $color-one-palette-one;
+  border: solid 2px $color-three-palette-one;
+}
+.sample__card--contact .js-paletteTwoIcon {
+  color: $color-one-palette-two;
+  border: solid 2px $color-three-palette-two;
+}
+.sample__card--contact .js-paletteThreeIcon {
+  color: $color-one-palette-three;
+  border: solid 2px $color-three-palette-three;
 }

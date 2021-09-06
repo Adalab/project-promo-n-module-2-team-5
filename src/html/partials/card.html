@@ -5,8 +5,12 @@
   </button>
   <article class="sample__card">
     <hgroup class="sample___card--title">
-      <h2 class="sample__card--title--name js-nameCard">Nombre Apellido</h2>
-      <h3 class="sample__card--title--job js-jobCard">Front-end developer</h3>
+      <h2 class="sample__card--title--name js-nameCard js-colorTitle">
+        Nombre Apellido
+      </h2>
+      <h3 class="sample__card--title--job js-colorSubtitle">
+        Front-end developer
+      </h3>
     </hgroup>
     <!--
     <img
@@ -20,18 +24,33 @@
       style="background-image: url('./assets/images/picrandom.jpg')"
     ></div>
     <ul class="sample__card--contact">
-      <a href="tel:" target="_blank" title="Llamar">
-        <li class="item item1"><i class="fas fa-mobile-alt"></i></li>
-      </a>
-      <a href="mailto:" target="_blank">
-        <li class="item item2"><i class="far fa-envelope"></i></li>
-      </a>
-      <a class="js-linkedin" href="" target="_blank">
-        <li class="item item3"><i class="fab fa-linkedin-in"></i></li>
-      </a>
-      <a class="js-githubcard" href="" target="_blank">
-        <li class="item item4"><i class="fab fa-github-alt"></i></li>
-      </a>
+      <li class="item item1">
+        <a
+          href="tel:"
+          target="_blank"
+          title="Llamar"
+          class="itemLink js-colorIcon"
+        >
+          <i class="fas fa-mobile-alt"></i>
+        </a>
+      </li>
+      <li class="item item2">
+        <a href="mailto:" target="_blank" class="itemLink js-colorIcon"
+          ><i class="far fa-envelope"></i
+        ></a>
+      </li>
+
+      <li class="item item3">
+        <a href="" class="itemLink js-colorIcon">
+          <i class="fab fa-linkedin-in"></i
+        ></a>
+      </li>
+
+      <li class="item item4">
+        <a href="" class="itemLink js-colorIcon">
+          <i class="fab fa-github-alt"></i
+        ></a>
+      </li>
     </ul>
   </article>
 </section>
