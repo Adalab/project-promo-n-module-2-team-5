@@ -55,17 +55,17 @@
         grid-template-columns: 1fr 1fr 1fr;
 
         .palette_1 {
-          background-color: #114e4e;
+          background-color: $color-one-palette-one;
           height: 25px;
           width: 30px;
         }
         .palette_2 {
-          background-color: #438792;
+          background-color: $color-two-palette-one;
           height: 25px;
           width: 30px;
         }
         .palette_3 {
-          background-color: #a2deaf;
+          background-color: $color-three-palette-one;
           height: 25px;
           width: 30px;
         }
@@ -75,17 +75,17 @@
         grid-column: 2/3;
         grid-template-columns: 1fr 1fr 1fr;
         .palette_1 {
-          background-color: #420101;
+          background-color: $color-one-palette-two;
           height: 25px;
           width: 30px;
         }
         .palette_2 {
-          background-color: #bd1010;
+          background-color: $color-two-palette-two;
           height: 25px;
           width: 30px;
         }
         .palette_3 {
-          background-color: #e95626;
+          background-color: $color-three-palette-two;
           height: 25px;
           width: 30px;
         }
@@ -95,17 +95,17 @@
         grid-column: 2/3;
         grid-template-columns: 1fr 1fr 1fr;
         .palette_1 {
-          background-color: #3e5b65;
+          background-color: $color-one-palette-three;
           height: 25px;
           width: 30px;
         }
         .palette_2 {
-          background-color: #eab052;
+          background-color: $color-two-palette-three;
           height: 25px;
           width: 30px;
         }
         .palette_3 {
-          background-color: #a0c0cf;
+          background-color: $color-three-palette-three;
           height: 25px;
           width: 30px;
         }
