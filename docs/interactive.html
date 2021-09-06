@@ -43,8 +43,12 @@
         </button>
         <article class="sample__card">
           <hgroup class="sample___card--title">
-            <h2 class="sample__card--title--name js-nameCard">Nombre Apellido</h2>
-            <h3 class="sample__card--title--job js-jobCard">Front-end developer</h3>
+            <h2 class="sample__card--title--name js-nameCard js-colorTitle">
+              Nombre Apellido
+            </h2>
+            <h3 class="sample__card--title--job js-jobCard js-colorSubtitle">
+              Front-end developer
+            </h3>
           </hgroup>
           <!--
           <img
@@ -58,18 +62,36 @@
             style="background-image: url('./assets/images/picrandom.jpg')"
           ></div>
           <ul class="sample__card--contact">
-            <a href="tel:" target="_blank" title="Llamar">
-              <li class="item item1"><i class="fas fa-mobile-alt"></i></li>
-            </a>
-            <a href="mailto:" target="_blank">
-              <li class="item item2"><i class="far fa-envelope"></i></li>
-            </a>
-            <a class="js-linkedin" href="" target="_blank">
-              <li class="item item3"><i class="fab fa-linkedin-in"></i></li>
-            </a>
-            <a class="js-githubcard" href="" target="_blank">
-              <li class="item item4"><i class="fab fa-github-alt"></i></li>
-            </a>
+            <li class="item item1">
+              <a
+                href="tel:"
+                target="_blank"
+                title="Llamar"
+                class="itemLink js-colorIcon js-phoneCard"
+              >
+                <i class="fas fa-mobile-alt"></i>
+              </a>
+            </li>
+            <li class="item item2">
+              <a
+                href="mailto:"
+                target="_blank"
+                class="itemLink js-colorIcon js-emailCard"
+                ><i class="far fa-envelope"></i
+              ></a>
+            </li>
+
+            <li class="item item3">
+              <a href="" class="itemLink js-colorIcon js-linkedin">
+                <i class="fab fa-linkedin-in"></i
+              ></a>
+            </li>
+
+            <li class="item item4">
+              <a href="" class="itemLink js-colorIcon js-githubcard">
+                <i class="fab fa-github-alt"></i
+              ></a>
+            </li>
           </ul>
         </article>
       </section>
@@ -87,15 +109,15 @@
               <p class="text">colores</p>
               <div class="palette">
                 <fieldset class="check" action="/signup">
-                  <label class="check_one" for="paymentmethod1">
-                    <input class="one" id="palette" type="radio" value="debitcard" name="paymentmethods" />
+                  <label class="check_one js-paletteOne" for="paymentmethod1">
+                    <input class="one js-buttonOne" id="palette" type="radio" value="debitcard" name="paymentmethods" />
                     <div class="paletteA">
                       <div class="palette_1"></div>
                       <div class="palette_2"></div>
                       <div class="palette_3"></div>
                     </div>
                   </label>
-                  <label class="check_one" for="paymentmethod2">
+                  <label class="check_one js-paletteTwo" for="paymentmethod2">
                     <input class="one" id="palette" type="radio" value="creditcard" name="paymentmethods" />
                     <div class="paletteB">
                       <div class="palette_1"></div>
@@ -103,7 +125,7 @@
                       <div class="palette_3"></div>
                     </div>
                   </label>
-                  <label class="check_one" for="paymentmethod3">
+                  <label class="check_one js-paletteThree" for="paymentmethod3">
                     <input class="one" id="palette" type="radio" value="paypal" name="paymentmethods" />
                     <div class="paletteC">
                       <div class="palette_1"></div>
@@ -126,7 +148,7 @@
               /></a>
             </div>
             <div class="js-collapse hidden">
-              <fieldset class="quest hidden" action="/signup" method="post">
+              <fieldset class="quest hidden js-textForm" action="/signup" method="post">
                 <label class="quest__label" for="name">Nombre completo</label>
                 <input
                   class="quest__input js-name"
@@ -134,6 +156,7 @@
                   id="name"
                   type="text"
                   name="name"
+                  required
                 />
                 <label class="quest__label" for="role">Puesto</label>
                 <input
@@ -142,6 +165,7 @@
                   id="job"
                   type="text"
                   name="role"
+                  required
                 />
 
                 <fieldset class="quest__secondfield">
@@ -155,6 +179,7 @@
                       name="photo"
                       id="photo"
                       class="action__hiddenField js__profile-upload-btn"
+                      required
                     />
                   </div>
                   <!--<div class="profile">
@@ -171,6 +196,7 @@
                   id="email"
                   type="text"
                   name="role"
+                  required
                 />
                 <label class="quest__label" for="phone">Teléfono</label>
                 <input
@@ -187,6 +213,7 @@
                   id="linkedin"
                   type="url"
                   name="Linkedin-profile"
+                  required
                 />
                 <label class="quest__label" for="github">Github</label>
                 <input
@@ -195,6 +222,7 @@
                   id="github"
                   type="text"
                   name="Github-profile"
+                  required
                 />
               </fieldset>
             </div>
