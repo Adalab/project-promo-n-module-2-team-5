@@ -3,6 +3,8 @@
 const textForm = document.querySelector('.js-textForm');
 const jobsCard = document.querySelector('.js-jobCard');
 const namesCard = document.querySelector('.js-nameCard');
+const phone = document.querySelector('.js-phoneCard');
+const email = document.querySelector('.js-emailCard');
 const linkedin = document.querySelector('.js-linkedin');
 const gitHub = document.querySelector('.js-githubcard');
 
@@ -20,6 +22,10 @@ function handleTextForm(event) {
     gitHub.href = inputValue;
   } else if (inputId === 'linkedin') {
     linkedin.href = inputValue;
+  } else if (inputId === 'phone') {
+    phone.href = inputValue;
+  } else if (inputId === 'email') {
+    email.href = inputValue;
   }
 }
 
