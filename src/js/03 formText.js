@@ -19,13 +19,13 @@ function handleTextForm(event) {
   } else if (inputId === 'name') {
     namesCard.innerHTML = inputValue;
   } else if (inputId === 'github') {
-    gitHub.href = inputValue;
+    gitHub.href = 'https://github.com/' + inputValue;
   } else if (inputId === 'linkedin') {
-    linkedin.href = inputValue;
+    linkedin.href = 'https://www.linkedin.com/in/' + inputValue;
   } else if (inputId === 'phone') {
-    phone.href = inputValue;
+    phone.href = 'tel:' + inputValue;
   } else if (inputId === 'email') {
-    email.href = inputValue;
+    email.href = 'mailto:' + inputValue;
   }
 }
 
