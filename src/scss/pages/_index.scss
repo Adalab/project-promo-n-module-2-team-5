@@ -14,7 +14,9 @@
 .hidden {
   display: none;
 }
-
+.collapsable-close {
+  display: none;
+}
 .rotate {
   transform: rotate(180deg) translateY(21px);
 }
