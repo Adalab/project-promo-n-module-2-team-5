@@ -13,3 +13,24 @@ const dataUser = {
     linkedin: document.querySelector('.js_input_linkedin').value,
     github: document.querySelector('.js_input_github').value,
 };
+
+function handleCreateBtn(ev) {
+    ev.preventDefault();
+    fetch('https://awesome-profile-cards.herekuapp.com/card', {
+            method: 'POST',
+            body: JSON.stringify(dataUser),
+            headers: {
+                'Content-type': 'application/json',
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            //podemos crear un función para que pinte el enlace y botón a twitt
+            cardResultElement.innerHTML = data.cardURL;
+        })
+}
+
+
+
+createBtn.addEventListener('click', handleCreateBtn);
