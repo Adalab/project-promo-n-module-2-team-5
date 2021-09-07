@@ -1,6 +1,7 @@
 'use strict';
 
-const createBtn = document.querySelector(',js')
+const createBtn = document.querySelector('.js_create_btn');
+const cardResultElement = document.querySelector('.js_card_result');
 
 const dataUser = {
     photo: ,
