@@ -29,4 +29,4 @@ function handleTextForm(event) {
   }
 }
 
-textForm.addEventListener('keyup', handleTextForm);
+textForm.addEventListener('change', handleTextForm);

@@ -41,10 +41,13 @@ function handleCreateBtn(ev) {
         lineTwitter.classList.add('hiddenLine');
         textURL.innerHTML = data.cardURL;
       } else {
-        textURL.innerHTML = twitterShare.classList.remove('hiddenTwitter');
+        twitterShare.classList.remove('hiddenTwitter');
         lineTwitter.classList.add('hiddenLine');
-        textURL.innetHTML =
-          'Error al crear la tarjeta, por favor revise los datos introducidos';
+        let textNoURL = `Error al crear la tarjeta, por favor revise los datos introducidos`;
+        const newItem = document.createElement('p');
+        const newContent = document.createTextNode(textNoURL);
+        newItem.appendChild(newContent);
+        textURL.appendChild(newItem);
       }
       console.log(data);
     });
