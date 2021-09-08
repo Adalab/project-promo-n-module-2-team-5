@@ -62,16 +62,15 @@
   .line4 {
     margin: 10px 20px 0 0;
   }
-  //.hidden {
-  // display: none;
-  //}
+  .hiddenLine {
+    display: none;
+  }
   .share {
     margin-top: 20px;
     display: flex;
     align-items: center;
     flex-direction: column;
     text-transform: none;
-
     .title {
       margin-bottom: 5px;
       font-size: 18px;
@@ -108,5 +107,8 @@
         margin: 0 10px 0 10px;
       }
     }
+  }
+  .hiddenTwitter {
+    display: none;
   }
 }
