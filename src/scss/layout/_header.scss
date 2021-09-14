@@ -1,13 +1,13 @@
 .header {
-    width: 100%;
-    height: 111px;
-    background-color: $white-two;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    
-    &__menu--img {
-        height: 50px;
-        padding-left: 40px;
-    }
+  width: 100%;
+  height: 190px;
+  background-color: $white-two;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__menu--img {
+    height: 155px;
+    padding-left: 40px;
+  }
 }

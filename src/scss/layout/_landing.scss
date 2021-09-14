@@ -44,6 +44,38 @@
     }
   }
   &__button {
+    height: 42px;
+    width: 129px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    transition: all 0.4s ease-in-out;
+    background-image: linear-gradient(
+      to right,
+      #ee6bc9,
+      #30aef1,
+      #fddc39,
+      $dull-orange
+    );
+    box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+
+    &:hover {
+      background-position: 100% 0;
+      transition: all 0.4s ease-in-out;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  /* button {
     background-color: $dirty-blue;
     height: 42px;
     width: 129px;
@@ -56,7 +88,7 @@
       transition: all 0.4s ease-in-out;
       transform: scale(1.1);
     }
-  }
+  } */
   &__wrapper--icons {
     display: flex;
     text-align: center;
