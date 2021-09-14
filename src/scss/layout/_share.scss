@@ -45,6 +45,12 @@
       font-size: 18px;
       border: 0;
       box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+      &:hover {
+        color: #fff;
+        background-color: #f0935e;
+        transition: all 0.4s ease-in-out;
+        transform: scale(1.1);
+      }
       @media (min-width: 768px) {
         margin-bottom: 10px; /*Quitar cuando usemos JS*/
       }
@@ -79,6 +85,7 @@
     .url {
       color: #e17334;
       font-size: 12px;
+      text-align: center;
     }
     .button {
       display: flex;
@@ -89,15 +96,21 @@
       height: 30px;
       width: auto;
       border-radius: 3px;
-      color: #fff;
       border: 0;
       box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+      &:hover {
+        color: #fff;
+        background-color: #5fbaeb;
+        transition: all 0.4s ease-in-out;
+        transform: scale(1.1);
+      }
       @media (min-width: 768px) {
         margin-bottom: 10px; /*Quitar cuando usemos JS*/
       }
       .fab {
         margin-left: 10px;
         display: flex;
+        color: #fff;
       }
       .twitter {
         text-transform: uppercase;
@@ -105,6 +118,7 @@
         font-weight: 600;
         font-size: 14px;
         margin: 0 10px 0 10px;
+        color: #fff;
       }
     }
   }

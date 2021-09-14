@@ -25,7 +25,7 @@
   }
   &__title {
     font-size: 19.2px;
-    font-family: "Merriweather", serif;
+    font-family: 'Merriweather', serif;
     color: $dull-orange;
     text-align: center;
     margin: 17.2px auto 0px auto;
@@ -51,11 +51,13 @@
     width: 129px;
     border-radius: 21px;
     border: none;
-
     margin: 38px auto 30px auto;
-    /*@media (min-width: 768px) {
-      transform: translateY(176px);
-    }*/
+    &:hover {
+      color: #fff;
+      background-color: #82b5bd;
+      transition: all 0.4s ease-in-out;
+      transform: scale(1.1);
+    }
   }
   &__wrapper--icons {
     display: flex;

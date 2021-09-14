@@ -109,6 +109,18 @@
   color: $color-one-palette-three;
   border-left: $color-two-palette-three solid 5px;
 }
+.js-paletteFourTitle {
+  color: $color-one-palette-four;
+  border-left: $color-two-palette-four solid 5px;
+}
+.js-paletteFiveTitle {
+  color: $color-one-palette-five;
+  border-left: $color-two-palette-five solid 5px;
+}
+.js-paletteSixTitle {
+  color: $color-one-palette-six;
+  border-left: $color-two-palette-six solid 5px;
+}
 .js-paletteOneSubtitle {
   border-left: $color-two-palette-one solid 5px;
 }
@@ -117,6 +129,15 @@
 }
 .js-paletteThreeSubtitle {
   border-left: $color-two-palette-three solid 5px;
+}
+.js-paletteFourSubtitle {
+  border-left: $color-two-palette-four solid 5px;
+}
+.js-paletteFiveSubtitle {
+  border-left: $color-two-palette-five solid 5px;
+}
+.js-paletteSixSubtitle {
+  border-left: $color-two-palette-six solid 5px;
 }
 .sample__card--contact .js-paletteOneIcon {
   color: $color-one-palette-one;
@@ -129,4 +150,16 @@
 .sample__card--contact .js-paletteThreeIcon {
   color: $color-one-palette-three;
   border: solid 2px $color-three-palette-three;
+}
+.sample__card--contact .js-paletteFourIcon {
+  color: $color-one-palette-four;
+  border: solid 2px $color-three-palette-four;
+}
+.sample__card--contact .js-paletteFiveIcon {
+  color: $color-one-palette-five;
+  border: solid 2px $color-three-palette-five;
+}
+.sample__card--contact .js-paletteSixIcon {
+  color: $color-one-palette-six;
+  border: solid 2px $color-three-palette-six;
 }

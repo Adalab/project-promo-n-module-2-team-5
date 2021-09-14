@@ -2,7 +2,7 @@
 
 const resetButton = document.querySelector('.js-resetButton');
 
-function handleResetInput(ev) {
+function handleResetInput() {
   location.reload();
 }
 

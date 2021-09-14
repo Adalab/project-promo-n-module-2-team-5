@@ -5,6 +5,7 @@ const textURL = document.querySelector('.js-url');
 const form = document.querySelector('.js-form');
 const twitterShare = document.querySelector('.js-shareTwitter');
 const lineTwitter = document.querySelector('.js-line');
+const buttonTwitter = document.querySelector('.js-buttonTwitter');
 
 const dataUser = {
   palette: '',
@@ -36,10 +37,13 @@ function handleCreateBtn(ev) {
     .then((response) => response.json())
 
     .then((data) => {
+      console.log(data);
       if (data.success === true) {
         twitterShare.classList.remove('hiddenTwitter');
         lineTwitter.classList.add('hiddenLine');
         textURL.innerHTML = data.cardURL;
+        buttonTwitter.href = data.cardURL;
+        console.log(data.cardURL);
       } else {
         twitterShare.classList.remove('hiddenTwitter');
         lineTwitter.classList.add('hiddenLine');
