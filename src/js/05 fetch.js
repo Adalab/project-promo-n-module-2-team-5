@@ -44,7 +44,7 @@ function handleCreateBtn(ev) {
         twitterShare.classList.remove('hiddenTwitter');
         lineTwitter.classList.add('hiddenLine');
         let textNoURL = `Error al crear la tarjeta, por favor revise los datos introducidos`;
-        const newItem = document.createElement('p');
+        const newItem = document.createElement('a');
         const newContent = document.createTextNode(textNoURL);
         newItem.appendChild(newContent);
         textURL.appendChild(newItem);
@@ -52,4 +52,5 @@ function handleCreateBtn(ev) {
       console.log(data);
     });
 }
+
 createBtn.addEventListener('click', handleCreateBtn);
