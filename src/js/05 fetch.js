@@ -24,6 +24,7 @@ function handlerFormData(ev) {
   const inputId = ev.target.id;
   const inputValue = ev.target.value;
   dataUser[inputId] = inputValue;
+  console.log(dataUser);
 }
 form.addEventListener('change', handlerFormData);
 
@@ -37,9 +38,7 @@ function handleCreateBtn(ev) {
     },
   })
     .then((response) => response.json())
-
     .then((data) => {
-      console.log(data);
       twitterShare.classList.remove('hiddenTwitter');
       lineTwitter.classList.add('hiddenLine');
       if (data.success === true) {
@@ -57,6 +56,6 @@ function handleCreateBtn(ev) {
         textURL.removeAttribute('href');
       }
     });
-  setLocalStorage();
 }
+
 createBtn.addEventListener('click', handleCreateBtn);

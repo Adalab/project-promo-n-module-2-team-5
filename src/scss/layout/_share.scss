@@ -1,6 +1,6 @@
 .sectionDesigns {
   font-family: 'Open Sans', sans-serif;
-  color: #54585a;
+  color: $gunmetal;
   display: block;
   .collapsible-title {
     font-weight: 600;
@@ -30,26 +30,40 @@
     justify-content: center;
 
     .button1 {
+      align-items: center;
+      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
       display: flex;
       justify-content: space-evenly;
-      align-items: center;
-      background-color: $dull-orange;
-      margin-top: 30px;
+      transform: scale(1.1);
+      font-family: 'Open Sans', sans-serif;
+      text-transform: uppercase;
       height: 50px;
       width: 200px;
-      border-radius: 12px;
-      text-transform: uppercase;
-      color: #fff;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 600;
       font-size: 18px;
-      border: 0;
-      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+      font-weight: 600;
+      color: #fff;
+      margin: 30px;
+      text-align: center;
+      border: none;
+      background-size: 300% 100%;
+      border-radius: 12px;
+      transition: all 0.4s ease-in-out;
+      background-image: linear-gradient(
+        to right,
+        #ee6bc9,
+        #30aef1,
+        #fddc39,
+        $dull-orange
+      );
+      box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+
       &:hover {
-        color: #fff;
-        background-color: #f0935e;
+        background-position: 100% 0;
         transition: all 0.4s ease-in-out;
-        transform: scale(1.1);
+      }
+
+      &:focus {
+        outline: none;
       }
       @media (min-width: 768px) {
         margin-bottom: 10px; /*Quitar cuando usemos JS*/

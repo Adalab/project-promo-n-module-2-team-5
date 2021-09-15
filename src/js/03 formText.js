@@ -27,7 +27,8 @@ function handleTextForm(event) {
   } else if (inputId === 'email') {
     email.href = 'mailto:' + inputValue;
   }
-  setLocalStorage();
+
+  //setObjectInLocalStorage(); No funciona en Chrome el twitter...
 }
 
 textForm.addEventListener('change', handleTextForm);
