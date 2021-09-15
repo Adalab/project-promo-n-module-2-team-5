@@ -14,7 +14,9 @@ function getLocalStorage() {
   if (getLocalStorageDataUser !== null) {
     const arrayUser = JSON.parse(getLocalStorageDataUser);
     dataUser = arrayUser;
+
     handlerFormData();
+
   }
 }
 //para que cuando recargue la pagina esté a -1
