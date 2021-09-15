@@ -57,6 +57,7 @@ function handleCreateBtn(ev) {
         textURL.removeAttribute('href');
       }
     });
-  setLocalStorage();
 }
+
 createBtn.addEventListener('click', handleCreateBtn);
+buttonTwitter.addEventListener('click', buttonTwitterPrevent);

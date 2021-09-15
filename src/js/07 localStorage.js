@@ -1,4 +1,4 @@
-'use strict';
+/*'use strict';
 
 function setLocalStorage() {
   const stringDataUser = JSON.stringify(dataUser);
@@ -14,8 +14,8 @@ function getLocalStorage() {
   if (getLocalStorageDataUser !== null) {
     const arrayUser = JSON.parse(getLocalStorageDataUser);
     dataUser = arrayUser;
-    handlerFormData();
   }
+  paintForm(arrayUser);
 }
 //para que cuando recargue la pagina esté a -1
-getLocalStorage();
+getLocalStorage();*/
