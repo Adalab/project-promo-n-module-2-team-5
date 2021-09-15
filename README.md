@@ -7,11 +7,13 @@ Una aplicación web que nos permite crear una tarjeta de visita personalizada. E
 ## Construido con ⚔
 
 1. **Visual Studio Code** - Editor de código.
-2. **Javascript** - Lenguaje de programación.
-3. **Git** - Para el control de versiones.
-4. **Github** - Como repositorio remoto.
-5. **Github Pages** - Para su publicación.
-6. **SASS** - Para añadir estilos.
+2. **Javascript** - Lenguaje de programación para incorporar interactividad.
+3. **HTML** Lenguaje de marcado para la estructura.
+4. **SASS** - Para añadir estilos.
+5. **Git** - Para el control de versiones.
+6. **Github** - Como repositorio remoto.
+7. **Github Pages** - Para su publicación.
+
 
 ---
 
