@@ -5,8 +5,8 @@ const textURL = document.querySelector('.js-url');
 const form = document.querySelector('.js-form');
 const twitterShare = document.querySelector('.js-shareTwitter');
 const lineTwitter = document.querySelector('.js-line');
-const buttonTwitter = document.querySelector('.js-buttonTwitter');
-const buttonTwitterOne = document.querySelector('.js-buttonTwitterOne');
+const buttonTwitter = document.querySelector('.js-buttonTwitterOne');
+const buttonTwitterLink = document.querySelector('.js-buttonTwitter');
 const textTitle = document.querySelector('.js-title');
 
 let dataUser = {
@@ -44,8 +44,8 @@ function handleCreateBtn(ev) {
       lineTwitter.classList.add('hiddenLine');
       if (data.success === true) {
         textURL.innerHTML = data.cardURL;
-        buttonTwitter.href = data.cardURL;
-        buttonTwitterOne.add();
+        textURL.setAttribute('href', data.cardURL);
+        buttonTwitterLink.href = `https://twitter.com/intent/tweet?url=${data.cardURL}`;
       } else {
         let textNoURL = `Por favor revise los datos introducidos`;
         textTitle.innerHTML = `Error al crear la tarjeta:`;
@@ -53,7 +53,8 @@ function handleCreateBtn(ev) {
         const newContent = document.createTextNode(textNoURL);
         newItem.appendChild(newContent);
         textURL.appendChild(newItem);
-        buttonTwitterOne.remove();
+        buttonTwitter.remove();
+        textURL.removeAttribute('href');
       }
     });
 }
