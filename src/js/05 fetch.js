@@ -6,8 +6,10 @@ const form = document.querySelector('.js-form');
 const twitterShare = document.querySelector('.js-shareTwitter');
 const lineTwitter = document.querySelector('.js-line');
 const buttonTwitter = document.querySelector('.js-buttonTwitter');
+const buttonTwitterOne = document.querySelector('.js-buttonTwitterOne');
+const textTitle = document.querySelector('.js-title');
 
-const dataUser = {
+let dataUser = {
   palette: '',
   name: '',
   job: '',
@@ -38,23 +40,21 @@ function handleCreateBtn(ev) {
 
     .then((data) => {
       console.log(data);
+      twitterShare.classList.remove('hiddenTwitter');
+      lineTwitter.classList.add('hiddenLine');
       if (data.success === true) {
-        twitterShare.classList.remove('hiddenTwitter');
-        lineTwitter.classList.add('hiddenLine');
         textURL.innerHTML = data.cardURL;
         buttonTwitter.href = data.cardURL;
-        console.log(data.cardURL);
+        buttonTwitterOne.add();
       } else {
-        twitterShare.classList.remove('hiddenTwitter');
-        lineTwitter.classList.add('hiddenLine');
-        let textNoURL = `Error al crear la tarjeta, por favor revise los datos introducidos`;
+        let textNoURL = `Por favor revise los datos introducidos`;
+        textTitle.innerHTML = `Error al crear la tarjeta:`;
         const newItem = document.createElement('a');
         const newContent = document.createTextNode(textNoURL);
         newItem.appendChild(newContent);
         textURL.appendChild(newItem);
+        buttonTwitterOne.remove();
       }
-      console.log(data);
     });
 }
-
 createBtn.addEventListener('click', handleCreateBtn);
