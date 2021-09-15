@@ -57,5 +57,6 @@ function handleCreateBtn(ev) {
         textURL.removeAttribute('href');
       }
     });
+  setLocalStorage();
 }
 createBtn.addEventListener('click', handleCreateBtn);

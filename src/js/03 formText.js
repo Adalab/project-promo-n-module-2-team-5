@@ -27,7 +27,7 @@ function handleTextForm(event) {
   } else if (inputId === 'email') {
     email.href = 'mailto:' + inputValue;
   }
-  getLocalStorage();
+  setLocalStorage();
 }
 
 textForm.addEventListener('change', handleTextForm);
